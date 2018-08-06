@@ -1,0 +1,49 @@
+echo toto
+## Unix
+export CONF=/Users/nico/Documents/root/Pro/conf/unix
+export ENVNICO=$CONF/envmac.sh
+echo $CONF
+# PATH EXTENSIONS
+# export PATH="/usr/local/bin:$PATH"
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+
+## Aliases
+alias ll='ls -l'
+alias la='ls -all'
+alias venv='vi $ENVNICO'
+alias senv='. $ENVNICO'
+alias logs='sudo vi /var/log/auth.log'
+alias c='clear'
+alias em='export EDITOR=emacs'
+alias ev='export EDITOR=vi'
+
+## CD
+alias vsc='cd /C/pro/code'
+alias img='cd /Users/nico/Documents/0-Vital/Root/multimedia/images'
+
+## SSH
+alias ovh='ssh nico@vps301374.ovh.net -p 2022'
+alias azu='ssh azureuser@nicog.cloudapp.net -p 2200'
+alias fiverif='ssh fiuser@fi-verification.cloudapp.net'
+alias rpi='ssh root@192.168.1.8'
+
+
+# Notes UNIX
+# to create destination dir with dates
+# Update distrib:
+# apt-get update
+# apt-get upgrade
+# apt-get dist-upgrade
+# SSH related
+# ssh -i chemin_vers_ta_clef utilisateur@machine
+# Git related
+# ex: git clone http://github.com/phocee/hello-world.git
+# diff
+# diff -rq folder1 folder2
+# export PATH="/usr/local/bin:$PATH"
+#code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* }
+
+echo 'env nico sourced'
